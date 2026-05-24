@@ -1,0 +1,74 @@
+export type ThemeMode = 'light' | 'dark';
+
+export interface AppColors {
+  background: string;
+  backgroundGradientEnd: string;
+  foreground: string;
+  muted: string;
+  card: string;
+  cardBorder: string;
+  glass: string;
+  glassBorder: string;
+  glassStrong: string;
+  primary: string;
+  primaryForeground: string;
+  inputBg: string;
+  tabBar: string;
+  tabBarBorder: string;
+  accent: string;
+  destructive: string;
+  subjectMath: string;
+  subjectPhysics: string;
+  subjectChemistry: string;
+  subjectEnglish: string;
+}
+
+export const lightColors: AppColors = {
+  background: '#f2f2f2',
+  backgroundGradientEnd: '#ffffff',
+  foreground: '#0a0a0a',
+  muted: '#6b6b6b',
+  card: 'rgba(255, 255, 255, 0.85)',
+  cardBorder: 'rgba(0, 0, 0, 0.08)',
+  glass: 'rgba(255, 255, 255, 0.55)',
+  glassBorder: 'rgba(255, 255, 255, 0.9)',
+  glassStrong: 'rgba(255, 255, 255, 0.72)',
+  primary: '#0a0a0a',
+  primaryForeground: '#ffffff',
+  inputBg: 'rgba(255, 255, 255, 0.6)',
+  tabBar: 'rgba(255, 255, 255, 0.88)',
+  tabBarBorder: 'rgba(0, 0, 0, 0.06)',
+  accent: '#404040',
+  destructive: '#dc2626',
+  subjectMath: '#525252',
+  subjectPhysics: '#737373',
+  subjectChemistry: '#a3a3a3',
+  subjectEnglish: '#262626',
+};
+
+export const darkColors: AppColors = {
+  background: '#0a0a0a',
+  backgroundGradientEnd: '#1a1a1a',
+  foreground: '#fafafa',
+  muted: '#a3a3a3',
+  card: 'rgba(255, 255, 255, 0.08)',
+  cardBorder: 'rgba(255, 255, 255, 0.12)',
+  glass: 'rgba(255, 255, 255, 0.1)',
+  glassBorder: 'rgba(255, 255, 255, 0.18)',
+  glassStrong: 'rgba(255, 255, 255, 0.14)',
+  primary: '#fafafa',
+  primaryForeground: '#0a0a0a',
+  inputBg: 'rgba(255, 255, 255, 0.08)',
+  tabBar: 'rgba(20, 20, 20, 0.92)',
+  tabBarBorder: 'rgba(255, 255, 255, 0.08)',
+  accent: '#d4d4d4',
+  destructive: '#f87171',
+  subjectMath: '#e5e5e5',
+  subjectPhysics: '#d4d4d4',
+  subjectChemistry: '#a3a3a3',
+  subjectEnglish: '#fafafa',
+};
+
+export function getColors(mode: ThemeMode): AppColors {
+  return mode === 'dark' ? darkColors : lightColors;
+}

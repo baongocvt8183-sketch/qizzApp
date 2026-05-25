@@ -3,7 +3,13 @@ export interface Subject {
   name: string;
   icon: string;
   questions: number;
-  colorKey: 'subjectMath' | 'subjectPhysics' | 'subjectChemistry' | 'subjectEnglish';
+  colorKey:
+    | 'subjectMath'
+    | 'subjectPhysics'
+    | 'subjectChemistry'
+    | 'subjectEnglish'
+    | 'subjectLiterature'
+    | 'subjectHistory';
 }
 
 export const SUBJECTS: Subject[] = [
@@ -39,6 +45,18 @@ export const SUBJECTS: Subject[] = [
 
 export const ALL_SUBJECTS: Subject[] = [
   ...SUBJECTS,
-  { id: 'literature', name: 'Văn học', icon: '📚', questions: 80, colorKey: 'subjectMath' },
-  { id: 'history', name: 'Lịch sử', icon: '🏛', questions: 70, colorKey: 'subjectPhysics' },
+  {
+    id: 'literature',
+    name: 'Văn học',
+    icon: '📚',
+    questions: 80,
+    colorKey: 'subjectLiterature',
+  },
+  {
+    id: 'history',
+    name: 'Lịch sử',
+    icon: '🏛',
+    questions: 70,
+    colorKey: 'subjectHistory',
+  },
 ];

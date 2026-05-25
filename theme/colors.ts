@@ -21,6 +21,8 @@ export interface AppColors {
   subjectPhysics: string;
   subjectChemistry: string;
   subjectEnglish: string;
+  subjectLiterature: string;
+  subjectHistory: string;
 }
 
 export const lightColors: AppColors = {
@@ -33,17 +35,19 @@ export const lightColors: AppColors = {
   glass: 'rgba(255, 255, 255, 0.55)',
   glassBorder: 'rgba(255, 255, 255, 0.9)',
   glassStrong: 'rgba(255, 255, 255, 0.72)',
-  primary: '#0a0a0a',
+  primary: '#7c3aed',
   primaryForeground: '#ffffff',
   inputBg: 'rgba(255, 255, 255, 0.6)',
   tabBar: 'rgba(255, 255, 255, 0.88)',
   tabBarBorder: 'rgba(0, 0, 0, 0.06)',
-  accent: '#404040',
+  accent: '#06b6d4',
   destructive: '#dc2626',
-  subjectMath: '#525252',
-  subjectPhysics: '#737373',
-  subjectChemistry: '#a3a3a3',
-  subjectEnglish: '#262626',
+  subjectMath: '#8b5cf6',
+  subjectPhysics: '#0ea5e9',
+  subjectChemistry: '#10b981',
+  subjectEnglish: '#f43f5e',
+  subjectLiterature: '#f97316',
+  subjectHistory: '#6366f1',
 };
 
 export const darkColors: AppColors = {
@@ -56,17 +60,19 @@ export const darkColors: AppColors = {
   glass: 'rgba(255, 255, 255, 0.1)',
   glassBorder: 'rgba(255, 255, 255, 0.18)',
   glassStrong: 'rgba(255, 255, 255, 0.14)',
-  primary: '#fafafa',
+  primary: '#ffffff',
   primaryForeground: '#0a0a0a',
   inputBg: 'rgba(255, 255, 255, 0.08)',
   tabBar: 'rgba(20, 20, 20, 0.92)',
   tabBarBorder: 'rgba(255, 255, 255, 0.08)',
-  accent: '#d4d4d4',
+  accent: '#22d3ee',
   destructive: '#f87171',
-  subjectMath: '#e5e5e5',
-  subjectPhysics: '#d4d4d4',
-  subjectChemistry: '#a3a3a3',
-  subjectEnglish: '#fafafa',
+  subjectMath: '#8b5cf6',
+  subjectPhysics: '#0ea5e9',
+  subjectChemistry: '#10b981',
+  subjectEnglish: '#f43f5e',
+  subjectLiterature: '#f97316',
+  subjectHistory: '#6366f1',
 };
 
 export function getColors(mode: ThemeMode): AppColors {
